@@ -10,7 +10,7 @@ public interface UserInfoBLService_Stub implements SalesBLService {
     int quantity;
     Account account;
 
-    public UserInfoService_Stub(String userId, String hotelId, String info, int quantity) {
+    public UserInfoService_Stub(String userId, String hotelId, String info, int quantity, Account account) {
         this.userId = userId;
         this.hotelId = hotelId;
         this.info = info;
@@ -30,7 +30,7 @@ public interface UserInfoBLService_Stub implements SalesBLService {
 
       //对用户信息进行增删改操作
     public ResultMessage modifyUser(LIMIT limit, UserInfoVO vo) {
-        return ResultMessage.SUCCESS;
+        return ResultMessage.SUCCEED;
     }
 
       //对信息进行合法性检查操作
