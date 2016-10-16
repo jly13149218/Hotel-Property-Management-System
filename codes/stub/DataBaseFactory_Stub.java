@@ -4,10 +4,10 @@
         UserInfoDatabaseService userInfoData = new UserInfoDataServiceMySqlImpl_Stub();
         return userInfoData;
     }
+    
     public DatabaseService getAccountDatabase(){
 	AccountDatabase accountData = new AccountDatabaseServiceMySqlImpl_Stub();
 	return accountData;
     }
 	 
-	
 }
